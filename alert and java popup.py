@@ -10,3 +10,5 @@ name=alert.text
 assert "Hello kaveri," in name
 alert.accept() #its
 # its dismiss the alert or cancel the alert alert.dismiss()
+
+print("the god will help you no worries ")

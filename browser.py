@@ -1,16 +1,11 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.common.by import By
 
+driver = webdriver.Chrome()
+driver.implicitly_wait(0.5)
 
-def get_driver(browser="chrome"):
-    if browser=="chrome":
-        return webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    elif browser=="firefox":
-        return webdriver.Firefox(service=Service(GeckoDriverManager().install()))
-    elif browser=="edge":
-        return webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
+driver.get("https://www.selenium.dev/selenium/web/inputs.html")
 
-driver = get_driver("edge")  # or "chrome", "firefox"
+# isEnabled
+is_enabled_button = driver.find_element(By.NAME, "button_input").is_enabled()
+assert is_enabled_button == True
