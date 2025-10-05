@@ -22,4 +22,6 @@ driver.close()
 driver.switch_to.window(window_Opend[0])
 assert 'Practice Page' in driver.find_element(By.XPATH,"//h1[text()='Practice Page']").text
 
+driver.close()
+
 
