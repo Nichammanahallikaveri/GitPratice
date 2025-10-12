@@ -20,10 +20,9 @@ tile=driver.find_element(By.XPATH,"//h2[text()='Welcome to QAClick Academy ']").
 print(tile)
 driver.close()
 driver.switch_to.window(window_Opend[0])
-print(driver.find_element(By.XPATH,"//h1[text()='Practice Page']").text)
-#assert 'Practice Page' in
+assert 'Practice Page' in driver.find_element(By.XPATH,"//h1[text()='Practice Page']").text
+driver.quit()
 
-driver.close()
 
 
 

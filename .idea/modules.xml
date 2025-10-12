@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/GitStuff.iml" filepath="$PROJECT_DIR$/.idea/GitStuff.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/GitPratice.iml" filepath="$PROJECT_DIR$/.idea/GitPratice.iml" />
+>>>>>>> 579afb64141629e21433b3fde5f2e7fb858ea1ed
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/GitPratice.iml" filepath="$PROJECT_DIR$/.idea/GitPratice.iml" />
 >>>>>>> 579afb64141629e21433b3fde5f2e7fb858ea1ed
